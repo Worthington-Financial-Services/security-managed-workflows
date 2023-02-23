@@ -19,5 +19,5 @@ jobs:
       - name: Dependency validation
         uses: actions/dependency-review-action@v2
         with:
-          config-file: github/octorepo/dependency-review-config.yml@main
+          config-file: Worthington-Financial-Services/security-managed-policies/sca/policy-light.yml@main
           external-repo-token: ${{ secrets.SECURITY_TOKEN }}
