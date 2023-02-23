@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Dependency validation
-        id: dependency_validation
         uses: actions/dependency-review-action@v2
-        continue-on-error: true
+        with:
+          config-file: github/octorepo/dependency-review-config.yml@main
+          external-repo-token: ${{ secrets.SECURITY_TOKEN }}
